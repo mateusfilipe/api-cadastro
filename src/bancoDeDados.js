@@ -43,8 +43,9 @@ function listUsers() {
 
 /**
  * Editando dados do usuário do banco de dados
- * @param id id do usuário que será editado
- * @param userAlt dados novos para o usuário
+ * @param id id do usuário que será editado 
+ * @param req requisão de dados novos
+ * @return userAlt usuário com dados novos
  */
 function editUser(id, req) {
     let achou = false;
@@ -67,7 +68,7 @@ function editUser(id, req) {
 
 /**
  * Deletando usuário a partir de ID específico
- * @param id id do usuário que será deletado 
+ * @param id id do usuário que será deletado
  * @return userAlt retorna dados do usuário deletado
  */
 function deleteUser(id) {
